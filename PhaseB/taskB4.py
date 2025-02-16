@@ -10,7 +10,7 @@ def clone_and_commit(filename, targetfile):
     if not filename or not targetfile:
         raise HTTPException(status_code=400, detail="Invalid input parameters: .git file and target file are required.")
     # Configure these variables
-    #REPO_URL = "https://github.com/23f2004912/GA2.git"
+    #REPO_URL = "https://github.com/23f3003132/GA2.git"
     REPO_URL = filename
     LOCAL_PATH = f"./data/{get_repo_name(REPO_URL)}"
     COMMIT_MESSAGE = "Updated example.txt"

@@ -11,7 +11,7 @@ A1. Install uv (if required) and run https://raw.githubusercontent.com/sanand0/t
 '''
 
 # Define the user's email (Replace this with an actual email or get it dynamically)
-user_email = os.getenv("USER_EMAIL", "23f2004912@ds.study.iitm.ac.in")
+user_email = os.getenv("USER_EMAIL", "23f3003132@ds.study.iitm.ac.in")
 output_path = os.getenv("OUTPUT_PATH", "./data")  # Default path is "./data"
 url = "https://raw.githubusercontent.com/sanand0/tools-in-data-science-public/tds-2025-01/project-1/datagen.py"
 script_path = "datagen.py"

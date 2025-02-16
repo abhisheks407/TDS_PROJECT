@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y curl \
 # Install FFmpeg
 RUN apt-get update && apt-get install -y ffmpeg  && apt-get install -y flac
 
-RUN git config --global user.name "23f2004912" && \
-    git config --global user.email "23f2004912@ds.study.iitm.ac.in"
+RUN git config --global user.name "23f3003132" && \
+    git config --global user.email "23f3003132@ds.study.iitm.ac.in"
 
 WORKDIR /app
 
@@ -20,4 +20,4 @@ COPY . /app
 
 RUN pip install -r /app/requirements.txt
 
-CMD uvicorn app:app --host 0.0.0.0 --port 8000 --reload --reload-exclude data --reload-exclude datagen.py
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
